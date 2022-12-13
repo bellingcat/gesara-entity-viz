@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gesara-entity-viz/static/css/main.ffef2fb8.css",
+    "main.js": "/gesara-entity-viz/static/js/main.ff804e72.js",
+    "index.html": "/gesara-entity-viz/index.html",
+    "main.ffef2fb8.css.map": "/gesara-entity-viz/static/css/main.ffef2fb8.css.map",
+    "main.ff804e72.js.map": "/gesara-entity-viz/static/js/main.ff804e72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffef2fb8.css",
+    "static/js/main.ff804e72.js"
+  ]
+}
