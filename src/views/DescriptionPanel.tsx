@@ -14,18 +14,17 @@ const DescriptionPanel: FC = () => {
       }
     >
       <p>
-        This visualisation represents a <i>network</i> of{" "}
+        This interactive visualisation represents a <i>network</i> of{" "}
         <a target="_blank" rel="noreferrer" href="https://spacy.io/usage/linguistic-features#named-entities">
           named entities
         </a> in English-language posts archived in a database of Telegram channels that have posted about the GESARA conspiracy theory. Each{" "}
-        <i>node</i> represents an entity, <i>edges</i> between nodes indicate that one or more posts contain both entities
-        .
+        <i>node</i> represents an entity, <i>edges</i> between nodes indicate that one or more posts contain both entities.
       </p>
       <p>
-        This kind of visualization shows the ecosystem of the people, organizations, and ideas these conspiracy Telegram channels talk about, as well as the connections between them.
+        This kind of visualisation shows the ecosystem of the people, organisations, and ideas these conspiracy Telegram channels talk about, as well as the connections between them.
       </p>
       <p>
-        Some social media channels were identified by researchers from{" "}
+        Some Telegram channels were identified by researchers from{" "}
         <a target="_blank" rel="noreferrer" href="https://www.bellingcat.com/">
           Bellingcat
         </a>{" "}and{" "}
@@ -59,14 +58,13 @@ const DescriptionPanel: FC = () => {
         .
       </p>
       <p>
-        The network was visualized using{" "}
+        The network was visualised using{" "}
         <a target="_blank" rel="noreferrer" href="https://gephi.org/">
         Gephi
-        </a>. Node sizes are related to the number of channels the entity was posted about in the database.
-        Nodes are colored based a{" "}
+        </a>. The radius of each node is proportional to the number of channels in the database whose posts mention the entity.         Nodes are coloured based on a{" "}
         <a target="_blank" rel="noreferrer" href="https://arxiv.org/abs/0803.0476">
         community detection algorithm
-        </a>.
+        </a>. Edges are weighted by the number of posts that mention both entities.
         For visualisation purposes, edges were pruned using the{" "}
         <a target="_blank" rel="noreferrer" href="https://github.com/naviddianati/GraphPruning">
           Marginal Likelihood Filter

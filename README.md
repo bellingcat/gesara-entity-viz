@@ -1,22 +1,22 @@
-# GESARA Named Entity Network Visualization
+# GESARA Named Entity Network Visualisation
 
-This project generates an [interactive visualization](https://bellingcat.github.io/gesara-entity-viz/) of [named entities](https://spacy.io/usage/linguistic-features#named-entities) in English-language posts archived in a database of Telegram channels that have posted about the GESARA conspiracy theory.
+This project generates an [interactive visualisation](https://bellingcat.github.io/gesara-entity-viz/) of [named entities](https://spacy.io/usage/linguistic-features#named-entities) in English-language posts archived in a database of Telegram channels that have posted about the GESARA conspiracy theory.
 
-This visualization was developed by Bellingcat based on an excellent [Sigma.js demo](https://github.com/jacomyal/sigma.js/tree/main/demo), and uses [react-sigma-v2](https://github.com/sim51/react-sigma-v2) to interface sigma.js with React.
+This visualisation was developed by Bellingcat based on an excellent [Sigma.js demo](https://github.com/jacomyal/sigma.js/tree/main/demo), and uses [react-sigma-v2](https://github.com/sim51/react-sigma-v2) to interface sigma.js with React.
 
-You can view the live visualization [here](https://bellingcat.github.io/gesara-entity-viz/). With GitHub pages configured, after making changes to the `main` branch, you need th run the command `npm run deploy` for the latest changes to be reflected in the live visualization.
+You can view the live visualisation [here](https://bellingcat.github.io/gesara-entity-viz/). With GitHub pages configured, after making changes to the `main` branch, you need to run the command `npm run deploy` for the latest changes to be reflected in the live visualisation.
 
 ## Python Scripts
 
-In the `scripts/` subdirectory, you can run Python scripts that were used to generate the network and visualization:
+In the `scripts/` subdirectory, you can run Python scripts that were used to generate the network and visualisation:
 
 ### `generate_network.py`
 
 Extracts the data from a PostgreSQL database, cleans the entity data, generates a NetworkX graph, prunes the edges using the [Marginal Likelihood Filter](https://github.com/naviddianati/GraphPruning), and exports the pruned graph.
 
-### `generate_visualization.py`
+### `generate_visualisation.py`
 
-After visualizing the network using [Gephi](https://gephi.org/) (using the Force Atlas 2 algorithm, with the "LinLog mode" and "Prevent Overlap" options enabled, and exporting as the file `entity_network_layout.graphml`), this script converts the node, edge, and cluster data into a format readable by this sigma.js project.
+After visualising the network using [Gephi](https://gephi.org/) (using the Force Atlas 2 algorithm, with the "LinLog mode" and "Prevent Overlap" options enabled, and exporting as the file `entity_network_layout.graphml`), this script converts the node, edge, and cluster data into a format readable by this sigma.js project.
 
 ## NPM Scripts
 

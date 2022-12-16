@@ -53,7 +53,7 @@ const Root: FC = () => {
           defaultNodeType: "image",
           labelDensity: 0.07,
           labelGridCellSize: 60,
-          labelRenderedSizeThreshold: 10,
+          labelRenderedSizeThreshold: dataset.labelThreshold,
           labelFont: "Lato, sans-serif",
           zIndex: true,
         }}
