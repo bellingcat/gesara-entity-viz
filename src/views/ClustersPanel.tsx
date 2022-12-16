@@ -59,7 +59,7 @@ const ClustersPanel: FC<{
       }
     >
       <p>
-        <i className="text-muted">Click a cluster to show/hide related pages from the network.</i>
+        <i className="text-muted">Click a cluster to show/hide related entities from the network. Cluster names were chosen to best describe most entities within the cluster, but do not always perfectly describe all entities within the cluster.</i>
       </p>
       <p className="buttons">
         <button className="btn" onClick={() => setClusters(mapValues(keyBy(clusters, "key"), () => true))}>

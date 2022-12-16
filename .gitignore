@@ -23,6 +23,8 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+*.graphml
+scripts/pruning/
 
 packages/react-devtools-core/dist
 packages/react-devtools-extensions/chrome/build

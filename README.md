@@ -1,12 +1,22 @@
-# Sigma.js full-featured demo
+# GESARA Named Entity Network Visualization
 
-This project aims to provide a full-features "real life" application using sigma.js. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses [react-sigma-v2](https://github.com/sim51/react-sigma-v2) to interface sigma.js with React.
+This project generates a visualization of [named entities](https://spacy.io/usage/linguistic-features#named-entities) in English-language posts archived in a database of Telegram channels that have posted about the GESARA conspiracy theory.
 
-## Dataset
+This visualization was developed by Bellingcat based on an excellent [Sigma.js demo](https://github.com/jacomyal/sigma.js/tree/main/demo), and uses [react-sigma-v2](https://github.com/sim51/react-sigma-v2) to interface sigma.js with React.
 
-The dataset has been kindly crafted by the [Sciences-Po médialab](https://medialab.sciencespo.fr/) and [OuestWare](https://www.ouestware.com/en/) teams using [Seealsology](https://densitydesign.github.io/strumentalia-seealsology/). It represents a network of Wikipedia pages, connected by ["See also"](https://en.wikipedia.org/wiki/See_also) links. It then was tagged by hand.
+## Python Scripts
 
-## Available Scripts
+In the `scripts/` subdirectory, you can run Python scripts that were used to generate the network and visualization:
+
+### `generate_network.py`
+
+Extracts the data from a PostgreSQL database, cleans the entity data, generates a NetworkX graph, prunes the edges using the [Marginal Likelihood Filter](https://github.com/naviddianati/GraphPruning), and exports the pruned graph.
+
+### `generate_visualization.py`
+
+After visualizing the network using [Gephi](https://gephi.org/) (using the Force Atlas 2 algorithm, with the "LinLog mode" and "Prevent Overlap" options enabled, and exporting as the file `entity_network_layout.graphml`), this script converts the node, edge, and cluster data into a format readable by this sigma.js project.
+
+## NPM Scripts
 
 In the project directory, you can run:
 
