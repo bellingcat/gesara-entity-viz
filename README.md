@@ -1,8 +1,10 @@
 # GESARA Named Entity Network Visualization
 
-This project generates a visualization of [named entities](https://spacy.io/usage/linguistic-features#named-entities) in English-language posts archived in a database of Telegram channels that have posted about the GESARA conspiracy theory.
+This project generates an [interactive visualization](https://bellingcat.github.io/gesara-entity-viz/) of [named entities](https://spacy.io/usage/linguistic-features#named-entities) in English-language posts archived in a database of Telegram channels that have posted about the GESARA conspiracy theory.
 
 This visualization was developed by Bellingcat based on an excellent [Sigma.js demo](https://github.com/jacomyal/sigma.js/tree/main/demo), and uses [react-sigma-v2](https://github.com/sim51/react-sigma-v2) to interface sigma.js with React.
+
+You can view the live visualization [here](https://bellingcat.github.io/gesara-entity-viz/). With GitHub pages configured, after making changes to the `main` branch, you need th run the command `npm run deploy` for the latest changes to be reflected in the live visualization.
 
 ## Python Scripts
 
