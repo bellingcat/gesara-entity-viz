@@ -47,7 +47,7 @@ CLUSTERS = [
 ]
 BOUNDING_BOX = {"x": [100, 200], "y": [-370,-50]}
 
-LABEL_THRESHOLD = 15
+LABEL_THRESHOLD = 10
 
 
 if __name__ == "__main__":
