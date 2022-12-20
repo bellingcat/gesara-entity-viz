@@ -3,7 +3,6 @@ import json
 
 import networkx as nx
 import pandas as pd
-
 import colorcet
 
 
@@ -23,13 +22,13 @@ CLUSTERS = [
     {"key": "19", "clusterLabel": "Elite human trafficking"},
     {"key": "9", "clusterLabel": "Big Tech and technocracy"},
     {"key": "16", "clusterLabel": "Epstein and pedophilia"},
-    {"key": "24", "clusterLabel": "Satanic US Cabal"},
+    {"key": "24", "clusterLabel": "US Cabal"},
     {"key": "8", "clusterLabel": "Global Cabal"},
     {"key": "1", "clusterLabel": "Kennedy and royal conspiracies"},
     {"key": "14", "clusterLabel": "Pharma and Anti-Vax"},
     {"key": "23", "clusterLabel": "US sports and celebrities"},
     {"key": "21", "clusterLabel": "Technological conspiracies"},
-    {"key": "25", "clusterLabel": "Fake news media"},
+    {"key": "25", "clusterLabel": "Mainstream media"},
     {"key": "7", "clusterLabel": "Vaccine injuries"},
     {"key": "30", "clusterLabel": "Academia and countries"},
     {"key": "39", "clusterLabel": "BLM/Antifa and Democrats"},

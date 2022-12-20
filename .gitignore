@@ -25,6 +25,7 @@ chrome-user-data
 *.swo
 *.graphml
 scripts/pruning/
+scripts/rescale_network.py
 
 packages/react-devtools-core/dist
 packages/react-devtools-extensions/chrome/build
